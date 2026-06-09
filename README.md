@@ -17,7 +17,7 @@ design_assignment_Abhinav1/
 │   │
 │   └── Ripple_Carry_Adder/
 │       ├── design/
-│       ├── rca/              ← design_rcv.v
+│       ├── rca/             
 │       ├── tb/
 │       ├── tb_rcv/
 │       └── rca.md
