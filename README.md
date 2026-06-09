@@ -79,13 +79,13 @@ gtkwave dump.vcd
  
 ---
  
-## 🛠 Tools
+## Tools
  
 - **Language:** Verilog HDL  
 - **Simulator:** Icarus Verilog / ModelSim  
 - **Waveform Viewer:** GTKWave  
 ---
  
-## 👤 Author
+##  Author
  
 **Abhinav** — [Abhinav7631-ab](https://github.com/Abhinav7631-ab)
