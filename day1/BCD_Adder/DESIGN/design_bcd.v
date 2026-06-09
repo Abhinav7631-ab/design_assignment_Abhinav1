@@ -1,1 +1,37 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 08.06.2026 21:35:37
+// Design Name: 
+// Module Name: bcd
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module bcd(input [3:0]A,[3:0]B,cin,output [3:0]S,cout);
+wire [3:0]w;
+wire w5,w6,w7,w8;
+rca R1(A,B,cin,w,w5);
+and(w6,w[3],w[2]);
+and(w7,w[3],w[1]);
+or(w8,w5,w6,w7);
+
+rca R2(w,{1'b0,w8,w8,1'b0},1'b0,S,cout);
+
+
+endmodule
+
+
 
