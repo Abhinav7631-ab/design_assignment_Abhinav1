@@ -4,7 +4,7 @@ Verilog RTL design assignments organized by day, each containing design and test
  
 ---
  
-## 📁 Structure
+## Repository Structure
  
 ```
 design_assignment_Abhinav1/
@@ -42,7 +42,7 @@ design_assignment_Abhinav1/
  
 ---
  
-## 🔧 Modules
+##  Modules
  
 ### Day 1
  
@@ -62,7 +62,7 @@ design_assignment_Abhinav1/
  
 ---
  
-## ▶️ Simulation
+##  Simulation
  
 Using **Icarus Verilog**:
  
