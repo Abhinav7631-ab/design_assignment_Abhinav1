@@ -6,9 +6,16 @@ ModuleDescriptionBCD AdderAdds two BCD digits and outputs a valid BCD resultRipp
 Day 2
 ModuleDescription2x4 DecoderDecodes a 2-bit input to one of four active output linesUSRUniversal Shift Register — supports load, left/right shift, and holdDFFD Flip-Flop — basic edge-triggered storage elementSRFFSR Flip-Flop — Set-Reset latch with standard behavior
 
-Repository Structure
+ Design Assignment — Abhinav
+ 
+Verilog RTL design assignments organized by day, each containing design and testbench files.
+ 
+---
+ 
 
-esign_assignment_Abhinav1/
+ 
+```
+design_assignment_Abhinav1/
 │
 ├── day1/
 │   ├── BCD_Adder/
@@ -40,3 +47,4 @@ esign_assignment_Abhinav1/
         ├── tb/
         └── srff_design.v
 ```
+ 
