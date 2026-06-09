@@ -8,7 +8,7 @@ design_assignment_Abhinav1/
 │   │
 │   └── Ripple_Carry_Adder/
 │       ├── design/
-│       ├── rca/             
+│       ├── rca/              ← design_rcv.v
 │       ├── tb/
 │       ├── tb_rcv/
 │       └── rca.md
@@ -29,6 +29,7 @@ design_assignment_Abhinav1/
     └── srff/
         ├── tb/
         └── srff_design.v
+```
 
  MODULE OVERVIEW      
 
