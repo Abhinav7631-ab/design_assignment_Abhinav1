@@ -1,18 +1,10 @@
- Modules
-
-Day 1
-ModuleDescriptionBCD AdderAdds two BCD digits and outputs a valid BCD resultRipple Carry AdderMulti-bit binary adder using cascaded full adder stages
-
-Day 2
-ModuleDescription2x4 DecoderDecodes a 2-bit input to one of four active output linesUSRUniversal Shift Register — supports load, left/right shift, and holdDFFD Flip-Flop — basic edge-triggered storage elementSRFFSR Flip-Flop — Set-Reset latch with standard behavior
-
  Design Assignment — Abhinav
  
 Verilog RTL design assignments organized by day, each containing design and testbench files.
  
 ---
  
-
+## 📁 Structure
  
 ```
 design_assignment_Abhinav1/
@@ -48,3 +40,52 @@ design_assignment_Abhinav1/
         └── srff_design.v
 ```
  
+---
+ 
+## 🔧 Modules
+ 
+### Day 1
+ 
+| Module | Description |
+|--------|-------------|
+| **BCD Adder** | Adds two BCD digits and outputs a valid BCD result |
+| **Ripple Carry Adder** | Multi-bit binary adder using cascaded full adder stages |
+ 
+### Day 2
+ 
+| Module | Description |
+|--------|-------------|
+| **2x4 Decoder** | Decodes a 2-bit input to one of four active output lines |
+| **USR** | Universal Shift Register — supports load, left/right shift, and hold |
+| **DFF** | D Flip-Flop — basic edge-triggered storage element |
+| **SRFF** | SR Flip-Flop — Set-Reset latch with standard behavior |
+ 
+---
+ 
+## ▶️ Simulation
+ 
+Using **Icarus Verilog**:
+ 
+```bash
+iverilog -o sim tb/<testbench>.v design/<design>.v
+vvp sim
+```
+ 
+To view waveforms (add `$dumpfile`/`$dumpvars` in testbench):
+ 
+```bash
+gtkwave dump.vcd
+```
+ 
+---
+ 
+## 🛠 Tools
+ 
+- **Language:** Verilog HDL  
+- **Simulator:** Icarus Verilog / ModelSim  
+- **Waveform Viewer:** GTKWave  
+---
+ 
+## 👤 Author
+ 
+**Abhinav** — [Abhinav7631-ab](https://github.com/Abhinav7631-ab)
