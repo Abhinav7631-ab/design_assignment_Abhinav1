@@ -25,10 +25,7 @@ class environment;
             drv.run();
             mon.run();
             scb.run();
-        join_none // NEW: Let all tasks run in the background
-        
-        // NEW: Wait until the scoreboard sees all transactions
-        // We have 2 directed tests + 'num_transactions' (20) random tests = 22 total
+        join_none 
         wait(scb.trans_count == (gen.num_transactions + 2));
     endtask
 endclass
