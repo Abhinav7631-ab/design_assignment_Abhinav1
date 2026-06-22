@@ -1,6 +1,6 @@
 class driver;
     virtual apb_if vif;
-    // FIX: Parameterized mailbox for Vivado XSim
+    
     mailbox #(apb_transaction) gen2drv;
 
     function new(virtual apb_if vif, mailbox #(apb_transaction) gen2drv);
