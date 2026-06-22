@@ -11,10 +11,10 @@ module apb_slave (
     output logic [31:0] prdata
 );
 
-    // Internal Memory Space: 32 rows, each 32 bits wide
+    
     logic [31:0] mem [0:31];
 
-    // State Machine Enumeration Types
+    
     typedef enum logic [1:0] {
         IDLE,
         SETUP,
@@ -24,7 +24,7 @@ module apb_slave (
     state_t state;
     integer i;
 
-    // Synchronous Protocol Sequential Block
+    
     always_ff @(posedge pclk or negedge presetn)
     begin
         if(!presetn)
@@ -64,7 +64,7 @@ module apb_slave (
 
                 //-------------------------------------------------------
                 ACCESS:
-                //-------------------------------------------------------
+                //------------------------------------------------------
                 begin
                     pready <= 1;
 
@@ -87,16 +87,16 @@ module apb_slave (
                         prdata  <= 32'hDEAD_BEEF;
                     end
 
-                    // Evaluate for back-to-back pipeline sequences
+                    
                     if(psel)
-                        state <= SETUP; // Next transfer
+                        state <= SETUP; 
                     else
-                        state <= IDLE;  // No transfer
+                        state <= IDLE;  
                 end
 
-                //-------------------------------------------------------
+                
                 default:
-                //-------------------------------------------------------
+                
                 begin
                     state <= IDLE;
                 end
